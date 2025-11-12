@@ -360,3 +360,12 @@ secure_named       = false  # Set to true to enable the secure_named which limit
 secure_http        = false  # Set to true to enable the secure_http excludes the served by header
 secure_nfs         = false  # Set to true to enable the secure_nfs limits the access of NFS served by the bastion to the compute/control plane
 ```
+
+### Node name configuration
+
+This variable determines whether to include the full domain name for the worker and control plane nodes.
+
+```
+include_cluster_domain      = false
+```
+Set it to true if you prefer to include the full domain name for the worker and control plane nodes during OCP deployment.
