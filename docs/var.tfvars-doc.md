@@ -361,6 +361,11 @@ secure_http        = false  # Set to true to enable the secure_http excludes the
 secure_nfs         = false  # Set to true to enable the secure_nfs limits the access of NFS served by the bastion to the compute/control plane
 ```
 
+This variable can be used to enable API server health checks in HAProxy.
+```
+haproxy_apiserver_healthcheck = true
+```
+
 ### Node name configuration
 
 This variable determines whether to include the full domain name for the worker and control plane nodes.
